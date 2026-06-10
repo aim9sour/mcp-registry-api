@@ -15,7 +15,7 @@ Instead of letting agents blindly run commands or guess API endpoints, this skil
 Agents can install this skill globally using the skills CLI:
 
 ```bash
-npx skills add aim9sour/mcp-registry-api
+npx skills add aim9sour/mcp-registry-api -g
 ```
 
 ## 🔒 Security First
@@ -27,6 +27,7 @@ This skill is built with extreme prejudice against malicious code. It explicitly
 ## 📚 Features
 - **Full API Reference**: Contains all exact REST endpoints for discovering, inspecting, and publishing servers.
 - **URL Encoding Handling**: Pre-warns the agent about complex `serverName` encoding (e.g., `com.example%2Fmy-tool`).
+- **Windows PowerShell Safety**: Includes strict instructions for agents to use `curl.exe` on Windows to avoid the notorious `Invoke-WebRequest` alias traps.
 - **Contextual Awareness**: Teaches the agent to behave like a smart librarian, analyzing tool descriptions to perfectly match the user's need.
 
 ## 🛠️ Usage Example
@@ -38,6 +39,9 @@ The agent will automatically use this skill's knowledge to:
 2. Verify the publisher's namespace.
 3. Fetch the `latest` remote configuration.
 4. Auto-configure the `mcp_servers.json` file for you.
+
+## 📄 License
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
 
 ---
 *Created with ❤️ by [@aim9sour](https://github.com/aim9sour)*

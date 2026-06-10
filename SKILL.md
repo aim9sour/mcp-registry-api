@@ -34,7 +34,7 @@ Use this skill whenever the user asks you to "find an MCP tool for X", "install 
      - You **MUST** ask the human user for explicit, direct confirmation before downloading, installing, or configuring any unverified or third-party server.
 
 5. **Execute Registry API Commands**
-   To interact with the registry, use `curl` to call the following exact endpoints. All endpoints use the base URL `https://registry.modelcontextprotocol.io/v0.1`.
+   To interact with the registry, use `curl` (or `curl.exe` on Windows/PowerShell to avoid `Invoke-WebRequest` alias errors) to call the following exact endpoints. All endpoints use the base URL `https://registry.modelcontextprotocol.io/v0.1`.
    **CRITICAL RULE**: You must URL-encode server names in path parameters (e.g., `com.example/server` becomes `com.example%2Fserver`). Do not forget this step.
    - **Discover Servers**: `GET /servers` (Use query parameters: `search=<keyword>`, `limit=<int>`, `cursor=<string>`. Example: `curl -s "https://registry.modelcontextprotocol.io/v0.1/servers?search=database&limit=5"`)
    - **List Server Versions**: `GET /servers/{serverName}/versions` (Example: `curl -s "https://registry.modelcontextprotocol.io/v0.1/servers/com.example%2Fserver/versions"`)

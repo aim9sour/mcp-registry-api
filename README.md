@@ -1,10 +1,12 @@
-# 🛡️ MCP Official Registry API Skill
+# 🛡️ MCP Registry API Skill
 
-> The ultimate, security-first Master Skill for AI Agents to interact with the Official Model Context Protocol (MCP) Registry.
+> A security-first Master Skill for AI Agents to safely interact with the Official Model Context Protocol (MCP) Registry.
 
 ![Security Shield](https://img.shields.io/badge/Security-Strict-red.svg) ![MCP Ready](https://img.shields.io/badge/MCP-Ready-blue.svg) ![Agent Skill](https://img.shields.io/badge/Skill-Agent-brightgreen.svg)
 
 ## 🌟 What is this?
+**Disclaimer:** *This is an unofficial, community-made skill designed to safely interact with the Official MCP Registry.*
+
 This is a highly specialized **Agent Skill** designed to teach AI agents (like Claude, Gemini, or any custom agent) how to safely and professionally interact with the official MCP Registry (`registry.modelcontextprotocol.io`). 
 
 Instead of letting agents blindly run commands or guess API endpoints, this skill embeds deep registry mechanics, authentication protocols, and **strict security boundaries** to ensure agents only download verified, safe tools for their users.
@@ -13,7 +15,7 @@ Instead of letting agents blindly run commands or guess API endpoints, this skil
 Agents can install this skill globally using the skills CLI:
 
 ```bash
-npx skills add aim9sour/mcp-official-registry-api
+npx skills add aim9sour/mcp-registry-api
 ```
 
 ## 🔒 Security First

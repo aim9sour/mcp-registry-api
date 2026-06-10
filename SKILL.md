@@ -1,5 +1,5 @@
 ---
-name: mcp-official-registry-api
+name: mcp-registry-api
 description: Use this skill whenever the user asks to find, install, configure, or publish an MCP (Model Context Protocol) server. Read this to learn the exact REST API commands for the official registry, how to verify publishers, and the strict security protocols required to safely evaluate and install AI tools without risking the user's system.
 ---
 
